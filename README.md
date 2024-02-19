@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/16JoaVso/Alv-Burger-Projeto)
+
+
 # Alv-Burguer-Projeto
 Este repositório hospeda o site AlvBurger
 ## Autor 
