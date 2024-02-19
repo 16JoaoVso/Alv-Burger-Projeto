@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/16JoaVso/Alv-Burger-Projeto)
+![GitHub License](https://img.shields.io/github/license/16JoaoVso/Alv-Burger-Projeto)
 
 
 # Alv-Burguer-Projeto
