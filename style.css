@@ -1,5 +1,70 @@
 /** 
-Folha de estilp dp site Alv Burger
+Folha de estilp do site Alv Burger
 @author João Victor Santos de Oliveira
+@link https://16joaovso.github.io/Alv-Burger-Projeto/
 */
 
+/* CSS RESET*/
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+/* importar fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Montserrat", "Poppins";
+    font-size: 1em;
+}
+
+/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px){
+    body {
+        background-color: lightcoral;
+    }
+}
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 768px){
+    body {
+        background-color: chocolate;
+    }
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 992px){
+    body {
+        background-color: violet;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1200px){
+    body {
+        background-color: mediumturquoise;
+    }
+}
+
+/* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1400x){
+    body {
+        background-color: maroon;
+    }
+}
