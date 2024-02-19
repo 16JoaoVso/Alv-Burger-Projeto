@@ -1,5 +1,5 @@
 ![GitHub License](https://img.shields.io/github/license/16JoaoVso/Alv-Burger-Projeto)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2F16JoaoVso%2FAlv-Burger-Projeto)
+![Website](https://img.shields.io/website?url=https%3A%2F%2F16joaovso.github.io%2FAlv-Burger-Projeto%2F)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2F16joaovso.github.io%2FAlv-Burger-Projeto%2F)
 
 
