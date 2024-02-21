@@ -1,22 +1,30 @@
 /** 
-Folha de estilp do site Alv Burger
+Folha de estilo do site Alv Burger
 @author João Victor Santos de Oliveira
 @link https://16joaovso.github.io/Alv-Burger-Projeto/
 */
-
-/* CSS RESET*/
-{
-    margin: 0;
-    padding: 0;
-    border: 0;
-
-}
 
 /* importar fontes */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variabeis golbais */
+
+:root {
+    --vermelhoLayout: #b22222;
+    --BrancoLayout: #FFFFFF
+}
+
+/* CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -28,43 +36,84 @@ body {
     font-size: 1em;
 }
 
+.Container {
+
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+.Flex {
+    display: Flex;
+    flex-direction: column;
+}
+.Flex2 {
+    display: Flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
+/**************** Cabeçalho ****************/
+#logo img{
+
+}
+
+/**************** Rodapé ****************/
+/*FOOTER*/
+footer {
+    background-color: var(--vermelhoLayout);
+    color: var(--BrancoLayout);
+    text-align: center;
+}
+
+#social {
+    margin-top: 25px;
+}
+
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 576px){
-    body {
-        background-color: lightcoral;
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #social {
+        margin: 0;
     }
 }
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>*/
 
-@media (min-width: 768px){
-    body {
-        background-color: chocolate;
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
     }
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
 
-@media (min-width: 992px){
-    body {
-        background-color: violet;
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
     }
 }
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
 
-@media (min-width: 1200px){
-    body {
-        background-color: mediumturquoise;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
     }
 }
 
 /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
 
-@media (min-width: 1400x){
-    body {
-        background-color: maroon;
+@media (min-width: 1400px){
+    .container {
+        max-width: 1360px;
     }
 }
