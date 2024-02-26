@@ -10,11 +10,14 @@ Folha de estilo do site Alv Burger
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* variabeis golbais */
+/* variaveis globais */
 
 :root {
     --vermelhoLayout: #b22222;
-    --BrancoLayout: #FFFFFF
+    --BrancoLayout: #FFFFFF;
+    --backgroundCard: #ff6961;
+    --bordaLayout: #ffa1b1;
+    --vermelhoLayout: #b81414;
 }
 
 /* CSS RESET*/
@@ -25,7 +28,7 @@ Folha de estilo do site Alv Burger
 
 }
 
-
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>*/
 html {
     scroll-behavior: smooth;
 }
@@ -42,21 +45,65 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+.Flex,
+.FlexMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Flex {
-    display: Flex;
     flex-direction: column;
 }
-.Flex2 {
-    display: Flex;
-    flex-direction: column;
+
+/* Cartão */
+.Card {
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
     text-align: center;
+
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelhoLayout);
+    color: var(--BrancoLayout);
+    padding: 2px 80px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
 /**************** Cabeçalho ****************/
-#logo img{
-
+header {
+    height: 100px;
+    background-color: #b22222;
 }
+
+#logo img {
+    width: 100px;
+    ;
+    height: 100px;
+    margin: 2px 0px 0px 10px;
+}
+
 
 /**************** Rodapé ****************/
 /*FOOTER*/
@@ -73,14 +120,36 @@ footer {
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-    .container {
+    /* Cabeçalho */
+
+    .Container {
         max-width: 540px;
+        margin: 0 auto;
     }
+
     .Flex {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
+
+    .header {
+        max-width: 540px;
+        margin: 0 auto;
+
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     #social {
         margin: 0;
     }
@@ -89,16 +158,37 @@ footer {
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 768px) {
-    .container {
+
+    /*Layout*/
+    .Container {
         max-width: 720px;
     }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 720px;
+        height: 100px;
+        background-color: lightsalmon;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+        margin: 2px 0px 0px 2px;
+    }
+
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 992px) {
-    .container {
+    .Container {
         max-width: 960px;
+    }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 992px;
     }
 }
 
@@ -108,12 +198,31 @@ footer {
     .container {
         max-width: 1140px;
     }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 1140px;
+        height: 100px;
+        background-color: lightsalmon;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
 
-@media (min-width: 1400px){
-    .container {
-        max-width: 1360px;
-    }
+@media (min-width: 1400px) {}
+
+/*Cabeçalho*/
+.header {
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
 }
