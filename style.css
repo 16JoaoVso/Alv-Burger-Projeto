@@ -17,7 +17,7 @@ Folha de estilo do site Alv Burger
     --BrancoLayout: #FFFFFF;
     --backgroundCard: #ff6961;
     --bordaLayout: #ffa1b1;
-    --vermelhoLayout: #b81414;
+    --vermelhoLayout2: #b81414;
 }
 
 /* CSS RESET*/
@@ -82,12 +82,18 @@ body {
 
 .Button {
     text-decoration: none;
-    background-color: var(--vermelhoLayout);
+    background-color: var(--vermelhoLayout2);
     color: var(--BrancoLayout);
     padding: 2px 80px;
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
+}
+
+#topo {
+    position: fixed;
+    top: 10px;
+    bottom: 10px;
 }
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
@@ -104,6 +110,44 @@ header {
     margin: 2px 0px 0px 10px;
 }
 
+#check {
+    display: none;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    font-size: 3em;
+    top: 20px;
+    right: 25px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(82, 82, 82, 0.96);
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    right: -60%;
+    width: 60%;
+    transition: all 0.3s;
+}
+
+/* ativar checkbox */
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--bordaLayout);
+    text-align: right;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancolayout);
+}
 
 /**************** Rodapé ****************/
 /*FOOTER*/
@@ -209,6 +253,30 @@ footer {
     #logo img {
         width: 100px;
         height: 100px;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    label {
+        display: none;
+    }
+
+    /*menu lateral */
+    nav ul {
+        background-color: rgba(82, 82, 82, 0.96);
+        height: auto;
+        position: static;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
     }
 }
 
