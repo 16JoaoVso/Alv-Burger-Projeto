@@ -64,6 +64,8 @@ section{
     flex-direction: column;
 }
 
+
+
 /* Cartão */
 .Card {
     margin-top: 30px;
@@ -93,6 +95,16 @@ section{
     text-decoration: none;
     background-color: var(--vermelhoLayout2);
     color: var(--BrancoLayout);
+    padding: 2px 80px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.Button2 {
+    text-decoration: none;
+    background-color: var(--BrancoLayout);
+    color: var(--vermelhoLayout);
     padding: 2px 80px;
     border-radius: 25px;
     font-size: 1.2em;
@@ -157,12 +169,32 @@ nav ul li a {
     color: var(--brancolayout);
 }
 
+/* Banner */
+main {
+    background: url(./img/background.jpg);
+    height: 50vh;
+    background-size: cover;
+    text-align: center;
+}
+
+main h1,h2 {
+    color:var(--BrancoLayout)
+}
+main h1 {
+    font-family: "Poppins";
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+main h2 {
+    display: none;
+}
 /**************** Rodapé ****************/
 /*FOOTER*/
 footer {
     background-color: var(--vermelhoLayout);
     color: var(--BrancoLayout);
     text-align: center;
+    padding-top: 39px;
 }
 
 #social {
@@ -179,6 +211,13 @@ footer {
         margin: 0 auto;
     }
 
+    /* Banner */
+    main {
+        height: 65vh;
+    }
+    main h1 {
+        font-size: 1.7em;
+    }
     .Flex {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -228,7 +267,33 @@ footer {
         height: 100px;
         margin: 2px 0px 0px 2px;
     }
-
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
+    /* banner */
+    main h1{
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 25px;
+ 
+    }
+    main h2{
+        display: block;
+        font-size: 1em;
+    }
+    main a{
+        margin-top: 50px;
+    }
+ 
+    label {
+        font-size: 4em;
+        top: 25px;
+        height: 5px;
+        color: rgba(67, 67, 67, 0.9);
+    }
+ 
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -267,21 +332,37 @@ footer {
     label {
         display: none;
     }
-
-    /*menu lateral */
+ 
     nav ul {
-        background-color: rgba(82, 82, 82, 0.96);
-        height: auto;
-        position: static;
         width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--backgroundcard);
         margin-top: 50px;
     }
-
+ 
     nav ul li {
         border: 0;
-        float: left;
+        float: right;
     }
-}
+ 
+    nav ul li a {
+        color: var(--bordalayout);
+    }
+ 
+    nav ul li a:hover {
+        color: var(--lightgraw);
+    }
+ 
+    main h1 {
+        font-size: 3em;
+    }
+    main h2 {
+        font-size: 1.5em;
+        text-shadow: #000000 0.5em 0.5em 0.5em 0.5em;
+    }
+
+
 #topo img {
     width: 54px;
     height: 54px;
