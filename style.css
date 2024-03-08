@@ -45,10 +45,15 @@ section{
     justify-content: center;
 }
 
+.container {
+    max-width: 1140px;
+    padding: 50px 15px 50px 15px;
+}
+
 .Container {
 
     margin: 0 auto;
-    padding: 2px 15px 50px 2px;
+    padding:2px 15px 50px 15px;
 }
 
 .Flex,
@@ -56,8 +61,9 @@ section{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    text-align: right;
+    text-align: center;
     color: var(--BrancoLayout);
+
 }
 
 .Flex {
@@ -130,8 +136,40 @@ header {
     margin: 2px 0px 0px 10px;
 }
 
+#topo {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
 #check {
     display: none;
+}
+
+/* BANNER HUME*/
+
+#banner{
+    height: 46vh;
+    background: url(./img/background2.png);
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+}
+
+#banner h1 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 52px;
+}
+
+#banner h2 {
+    font-size: 1.15em;
+    font-weight: 500;
+    margin: 5px 0px 45px 0px;
 }
 
 label {
@@ -169,25 +207,7 @@ nav ul li a {
     color: var(--brancolayout);
 }
 
-/* Banner */
-main {
-    background: url(./img/background.jpg);
-    height: 50vh;
-    background-size: cover;
-    text-align: center;
-}
 
-main h1,h2 {
-    color:var(--BrancoLayout)
-}
-main h1 {
-    font-family: "Poppins";
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-main h2 {
-    display: none;
-}
 /**************** Rodapé ****************/
 /*FOOTER*/
 footer {
@@ -224,8 +244,8 @@ footer {
         align-items: center;
     }
 
-    .header {
-        max-width: 540px;
+    header {
+        max-width: 700px;
         margin: 0 auto;
 
     }
@@ -235,11 +255,6 @@ footer {
         height: 100px;
     }
 
-    .Flex {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     #social {
         margin: 0;
@@ -256,9 +271,9 @@ footer {
     }
 
     /*Cabeçalho*/
-    .header {
-        max-width: 720px;
-        height: 100px;
+    header {
+        max-width: 790px;
+        height: 130px;
         background-color: lightsalmon;
     }
 
@@ -304,24 +319,26 @@ footer {
     }
 
     /*Cabeçalho*/
-    .header {
-        max-width: 992px;
+    header {
+        max-width: 1050px;
     }
 }
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
     .container {
         max-width: 1140px;
         padding: 15px 15px 50px 15px;
     }
+    
 
     /*Cabeçalho*/
-    .header {
-        max-width: 1140px;
-        height: 100px;
-        background-color: lightsalmon;
+    header {
+        max-width: 2200px;
+        height: 160px;
+        background-color: var(--vermelhoLayout)
+        ;
     }
 
     #logo img {
@@ -361,6 +378,7 @@ footer {
         font-size: 1.5em;
         text-shadow: #000000 0.5em 0.5em 0.5em 0.5em;
     }
+}
 
 
 #topo img {
@@ -373,12 +391,13 @@ footer {
 @media (min-width: 1400px) {}
 
 /*Cabeçalho*/
-.header {
-    height: 100px;
-    background-color: lightsalmon;
+header {
+    height: 160px;
+    background-color: var(--vermelhoLayout);
+
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
 }
