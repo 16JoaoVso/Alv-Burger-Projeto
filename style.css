@@ -146,7 +146,7 @@ header {
     display: none;
 }
 
-/* BANNER HUME*/
+/* BANNER HOME*/
 
 #banner{
     height: 46vh;
@@ -389,6 +389,11 @@ footer {
 /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 1400px) {}
+
+
+#banner{
+    height: 220pt;
+}
 
 /*Cabeçalho*/
 header {
