@@ -131,8 +131,6 @@ header {
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
     margin: 2px 0px 0px 10px;
 }
 
@@ -150,7 +148,7 @@ header {
 
 #banner{
     height: 46vh;
-    background: url(./img/background2.png);
+    background: url(./img/background4.jpg);
     background-size: cover;
     text-align: center;
     color: #FFFFFF;
@@ -232,10 +230,10 @@ footer {
     }
 
     /* Banner */
-    main {
+    #banner {
         height: 65vh;
     }
-    main h1 {
+    #banner h1 {
         font-size: 1.7em;
     }
     .Flex {
@@ -288,17 +286,17 @@ footer {
         width: 50%;
     }
     /* banner */
-    main h1{
+    #banner h1{
         font-size: 2em;
         font-weight: 700;
         margin-bottom: 25px;
  
     }
-    main h2{
+    #banner h2{
         display: block;
         font-size: 1em;
     }
-    main a{
+    #banner a{
         margin-top: 50px;
     }
  
@@ -316,6 +314,7 @@ footer {
 @media (min-width: 992px) {
     .Container {
         max-width: 960px;
+        padding: 5px;
     }
 
     /*Cabeçalho*/
@@ -329,13 +328,13 @@ footer {
 @media (min-width: 1200px){
     .container {
         max-width: 1140px;
-        padding: 15px 15px 50px 15px;
+        padding: 10px 15px 50px 15px;
     }
     
 
     /*Cabeçalho*/
     header {
-        max-width: 2200px;
+        max-width: 14000px;
         height: 160px;
         background-color: var(--vermelhoLayout)
         ;
@@ -371,17 +370,17 @@ footer {
         color: var(--lightgraw);
     }
  
-    main h1 {
+    #banner h1 {
         font-size: 3em;
     }
-    main h2 {
+    #banner h2 {
         font-size: 1.5em;
         text-shadow: #000000 0.5em 0.5em 0.5em 0.5em;
     }
 }
 
 
-#topo img {
+#topo img {81px
     width: 54px;
     height: 54px;
 }
@@ -392,17 +391,17 @@ footer {
 
 
 #banner{
-    height: 220pt;
+    height: 250pt;
 }
 
 /*Cabeçalho*/
 header {
-    height: 160px;
+    height: 100px;
     background-color: var(--vermelhoLayout);
 
 }
 
 #logo img {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 81px;
 }
