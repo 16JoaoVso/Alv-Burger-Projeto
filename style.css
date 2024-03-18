@@ -126,6 +126,8 @@ section{
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
 /**************** Cabeçalho ****************/
+@media (min-width: )
+
 header {
     height: 100%;
     background-color: #b22222;
