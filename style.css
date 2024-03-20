@@ -93,22 +93,22 @@ header {
     overflow: hidden;
     margin: 0 auto;
     display: block;
+    scroll-behavior: smooth; /* Adiciona suavização à rolagem */
 }
 
 .carousel {
     display: flex;
     width: 100%;
-    margin-left: 10px;
-    /* Adiciona espaço à esquerda */
-    height: 560px;
+    margin-left: 10px; /* Adiciona espaço à esquerda */
+    height: 560px; /* Defina a altura do carrossel */
     overflow-x: auto;
     z-index: -1;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; /* Define o tipo de rolagem */
 }
 
 .Card {
     flex: 0 0 auto;
-    width: calc();
+    width: calc(100% - 50px); /* Ajusta o tamanho do cartão */
     height: 450px;
     margin-right: 50px;
     background-color: var(--backgroundCard);
@@ -121,6 +121,10 @@ header {
     text-align: center;
     border: 1px solid var(--bordaLayout);
     z-index: -1;
+}
+
+.Card2{
+    display: none;
 }
 
 /* Para permitir arrastar para os lados */
@@ -378,7 +382,107 @@ footer {
         max-width: 960px;
         padding: 5px;
     }
-
+    .carousel-container {
+        overflow: hidden;
+        margin: 0 auto;
+        display: block;
+        scroll-behavior: smooth; /* Adiciona suavização à rolagem */
+    }
+    
+    .carousel {
+        display: flex;
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 10px; /* Adiciona espaço à esquerda */
+        height: 560px; /* Defina a altura do carrossel */
+        overflow-x: auto;
+        z-index: -1;
+        scroll-snap-type: x mandatory; /* Define o tipo de rolagem */
+    }
+    
+    .Card {
+        flex: 0 0 auto;
+        width: calc(100% - 400px); /* Ajusta o tamanho do cartão */
+        height: 450px;
+        margin-right: 50px;
+        background-color: var(--backgroundCard);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border: 1px solid var(--bordaLayout);
+        z-index: -1;
+    }
+    
+    .Card2{
+        display: none;
+    }
+    
+    /* Para permitir arrastar para os lados */
+    .carousel-container:hover .carousel {
+        cursor: grab;
+    }
+    
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+    }
+    
+    /* Efeito de arrastar */
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+    
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+    
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+    
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+    
+    .Card img {
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .Card h3 {
+        margin: 15px 30px 0px 30px;
+    }
+    
+    .Card p {
+        padding: 10px 15px 50px 15px;
+        text-align: left;
+    }
+    
+    .Button {
+        text-decoration: none;
+        background-color: var(--vermelhoLayout2);
+        color: var(--BrancoLayout);
+        padding: 2px 80px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    
+    .Button2 {
+        text-decoration: none;
+        background-color: var(--BrancoLayout);
+        color: var(--vermelhoLayout);
+        padding: 2px 80px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
     /*Cabeçalho*/
     header {
         max-width: 100%;
@@ -394,9 +498,9 @@ footer {
     }
 
     /* Cartão */
+    
 
-
-    .Card {
+    .Card2 {
         flex: 0 0 auto;
         width: 260px;
         height: 500px;
@@ -413,15 +517,15 @@ footer {
         border: 1px solid var(--bordaLayout);
     }
 
-    .Card img {
+    .Card2 img {
         border-radius: 25px 25px 0px 0px;
     }
 
-    .Card h3 {
+    .Card2 h3 {
         margin: 15px 30px 0px 30px;
     }
 
-    .Card p {
+    .Card2 p {
         padding: 10px 15px 50px 15px;
         text-align: left;
     }
