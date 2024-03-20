@@ -110,7 +110,7 @@ header {
     flex: 0 0 auto;
     width: calc(100% - 50px); /* Ajusta o tamanho do cartão */
     height: 450px;
-    margin-right: 50px;
+    margin-right: 20px;
     background-color: var(--backgroundCard);
     display: flex;
     flex-direction: column;
@@ -222,12 +222,14 @@ header {
     font-weight: 600;
     font-size: 2em;
     margin-top: 52px;
+    text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
 }
 
 #banner h2 {
     font-size: 1.15em;
     font-weight: 500;
     margin: 5px 0px 45px 0px;
+    text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
 }
 
 label {
@@ -292,10 +294,12 @@ footer {
     /* Banner */
     #banner {
         height: 20vh;
+        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
     }
 
     #banner h1 {
         font-size: 1.7em;
+        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
     }
 
     .Flex {
@@ -354,12 +358,14 @@ footer {
         font-size: 2em;
         font-weight: 700;
         margin-bottom: 25px;
+        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
 
     }
 
     #banner h2 {
         display: block;
         font-size: 1em;
+        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
     }
 
     #banner a {
@@ -590,11 +596,12 @@ footer {
 
     #banner h1 {
         font-size: 3em;
+        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
     }
 
     #banner h2 {
         font-size: 1.5em;
-        text-shadow: #000000 0.5em 0.5em 0.5em 0.5em;
+        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
     }
 }
 
@@ -610,7 +617,7 @@ footer {
 
 
 #banner {
-    height: 250pt;
+    height: 400pt;
 }
 
 /*Cabeçalho*/
