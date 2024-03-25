@@ -222,14 +222,42 @@ header {
     font-weight: 600;
     font-size: 2em;
     margin-top: 52px;
-    text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+    text-shadow: 5px 5px black;;
 }
 
 #banner h2 {
     font-size: 1.15em;
     font-weight: 500;
     margin: 5px 0px 45px 0px;
-    text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+    text-shadow: 3px 3px black;;
+}
+
+#Box {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--vermelhoLayout);
+}
+
+#destaqueBox {
+
+}
+
+#textoBox {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#textoBox h2 {
+    margin-bottom: 10px;
+}
+
+.TopicoBox {
+    margin-top: 20px;
+}
+
+.TopicoBox img {
+    margin-right: 10px;
 }
 
 label {
@@ -294,12 +322,11 @@ footer {
     /* Banner */
     #banner {
         height: 20vh;
-        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
     }
 
     #banner h1 {
         font-size: 1.7em;
-        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+        text-shadow: 5px 5px black;;
     }
 
     .Flex {
@@ -358,14 +385,14 @@ footer {
         font-size: 2em;
         font-weight: 700;
         margin-bottom: 25px;
-        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+        text-shadow: 5px 5px black;
 
     }
 
     #banner h2 {
         display: block;
         font-size: 1em;
-        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+        text-shadow: 3px 3px black;;
     }
 
     #banner a {
@@ -596,12 +623,12 @@ footer {
 
     #banner h1 {
         font-size: 3em;
-        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+        text-shadow: 5px 5px black;;
     }
 
     #banner h2 {
         font-size: 1.5em;
-        text-shadow: #000000 8.0em 8.0em 8.0em 8.0em;
+        text-shadow: 3px 3px black;;
     }
 }
 
@@ -618,7 +645,14 @@ footer {
 
 #banner {
     height: 400pt;
+    
 }
+
+#banner h1{
+    font-size: 3em;
+    text-shadow: 5px 5px black;
+}
+
 
 /*Cabeçalho*/
 header {
