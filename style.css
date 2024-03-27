@@ -232,6 +232,30 @@ header {
     text-shadow: 3px 3px black;;
 }
 
+#Sobre {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--backgroundCard);
+}
+
+#destaqueSBox img{
+    border-radius: 75% ;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+}
+
+
+#sobreBox {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#sobreBox h2 {
+    margin-bottom: 10px;
+}
+
 #Box {
     padding: 50px 0px;
     background-size: cover;
@@ -239,8 +263,10 @@ header {
     background-color: var(--vermelhoLayout);
 }
 
-#destaqueBox {
-
+#destaqueBox img{
+    border-radius: 75% ;
+    margin: 0 auto;
+    display: block;
 }
 
 #textoBox {
