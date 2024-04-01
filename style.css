@@ -70,10 +70,6 @@ section {
     flex-direction: column;
 }
 
-
-
-
-
 #topo {
     position: fixed;
     left: 10px;
@@ -93,22 +89,27 @@ header {
     overflow: hidden;
     margin: 0 auto;
     display: block;
-    scroll-behavior: smooth; /* Adiciona suavização à rolagem */
+    scroll-behavior: smooth;
+    /* Adiciona suavização à rolagem */
 }
 
 .carousel {
     display: flex;
     width: 100%;
-    margin-left: 10px; /* Adiciona espaço à esquerda */
-    height: 560px; /* Defina a altura do carrossel */
+    margin-left: 10px;
+    /* Adiciona espaço à esquerda */
+    height: 450px;
+    /* Defina a altura do carrossel */
     overflow-x: auto;
     z-index: -1;
-    scroll-snap-type: x mandatory; /* Define o tipo de rolagem */
+    scroll-snap-type: x mandatory;
+    /* Define o tipo de rolagem */
 }
 
 .Card {
     flex: 0 0 auto;
-    width: calc(100% - 50px); /* Ajusta o tamanho do cartão */
+    width: calc(100% - 50px);
+    /* Ajusta o tamanho do cartão */
     height: 450px;
     margin-right: 20px;
     background-color: var(--backgroundCard);
@@ -120,10 +121,10 @@ header {
     position: relative;
     text-align: center;
     border: 1px solid var(--bordaLayout);
-    z-index: -1;
+    z-index: 0;
 }
 
-.Card2{
+.Card2 {
     display: none;
 }
 
@@ -207,7 +208,7 @@ header {
 /* BANNER HOME*/
 
 #banner {
-    height: 20vh;
+    height: 10vh;
     background: url(./img/backgroundteste.jpg);
     background-size: cover;
     text-align: center;
@@ -222,14 +223,16 @@ header {
     font-weight: 600;
     font-size: 2em;
     margin-top: 52px;
-    text-shadow: 5px 5px black;;
+    text-shadow: 5px 5px black;
+    ;
 }
 
 #banner h2 {
     font-size: 1.15em;
     font-weight: 500;
     margin: 5px 0px 45px 0px;
-    text-shadow: 3px 3px black;;
+    text-shadow: 3px 3px black;
+    ;
 }
 
 #Sobre {
@@ -239,8 +242,8 @@ header {
     background-color: var(--backgroundCard);
 }
 
-#destaqueSBox img{
-    border-radius: 75% ;
+#destaqueSBox img {
+    border-radius: 75%;
     margin: 0 auto;
     display: block;
     width: 300px;
@@ -263,8 +266,8 @@ header {
     background-color: var(--vermelhoLayout);
 }
 
-#destaqueBox img{
-    border-radius: 75% ;
+#destaqueBox img {
+    border-radius: 75%;
     margin: 0 auto;
     display: block;
 }
@@ -292,17 +295,20 @@ label {
     font-size: 3em;
     top: 20px;
     right: 25px;
+    z-index: 1;
+
 }
 
 nav ul {
     list-style: none;
-    background-color: rgba(82, 82, 82, 0.96);
-    height: 100vh;
+    background-color: rgba(179, 25, 25, 0.85);
+    height: 30vh;
     position: fixed;
     top: 100px;
     right: -60%;
     width: 60%;
     transition: all 0.3s;
+    z-index: 1;
 }
 
 /* ativar checkbox */
@@ -314,11 +320,13 @@ nav ul li {
     border-bottom: 0.5px solid var(--bordaLayout);
     text-align: right;
     padding: 15px;
+    z-index: 1;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--brancolayout);
+    z-index: 1;
 }
 
 
@@ -329,10 +337,11 @@ footer {
     color: var(--BrancoLayout);
     text-align: center;
     padding-top: 39px;
+    height: 100px;
 }
 
 #social {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 
@@ -345,6 +354,10 @@ footer {
         margin: 0 auto;
     }
 
+    nav ul {
+        height: 53vh;
+    }
+
     /* Banner */
     #banner {
         height: 20vh;
@@ -352,7 +365,8 @@ footer {
 
     #banner h1 {
         font-size: 1.7em;
-        text-shadow: 5px 5px black;;
+        text-shadow: 5px 5px black;
+        ;
     }
 
     .Flex {
@@ -374,7 +388,7 @@ footer {
 
 
     #social {
-        margin: 0;
+        margin: ;
     }
 }
 
@@ -401,7 +415,8 @@ footer {
     }
 
     nav ul {
-        top: 100px;
+        height: 19.5vh;
+        top: 130px;
         right: -50%;
         width: 50%;
     }
@@ -418,7 +433,8 @@ footer {
     #banner h2 {
         display: block;
         font-size: 1em;
-        text-shadow: 3px 3px black;;
+        text-shadow: 3px 3px black;
+        ;
     }
 
     #banner a {
@@ -441,27 +457,33 @@ footer {
         max-width: 960px;
         padding: 5px;
     }
+
     .carousel-container {
         overflow: hidden;
         margin: 0 auto;
         display: block;
-        scroll-behavior: smooth; /* Adiciona suavização à rolagem */
+        scroll-behavior: smooth;
+        /* Adiciona suavização à rolagem */
     }
-    
+
     .carousel {
         display: flex;
         margin-top: 50px;
         width: 100%;
-        margin-left: 10px; /* Adiciona espaço à esquerda */
-        height: 560px; /* Defina a altura do carrossel */
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda */
+        height: 560px;
+        /* Defina a altura do carrossel */
         overflow-x: auto;
         z-index: -1;
-        scroll-snap-type: x mandatory; /* Define o tipo de rolagem */
+        scroll-snap-type: x mandatory;
+        /* Define o tipo de rolagem */
     }
-    
+
     .Card {
         flex: 0 0 auto;
-        width: calc(100% - 400px); /* Ajusta o tamanho do cartão */
+        width: calc(100% - 400px);
+        /* Ajusta o tamanho do cartão */
         height: 450px;
         margin-right: 50px;
         background-color: var(--backgroundCard);
@@ -475,54 +497,54 @@ footer {
         border: 1px solid var(--bordaLayout);
         z-index: -1;
     }
-    
-    .Card2{
+
+    .Card2 {
         display: none;
     }
-    
+
     /* Para permitir arrastar para os lados */
     .carousel-container:hover .carousel {
         cursor: grab;
     }
-    
+
     .carousel-container:active .carousel {
         cursor: grabbing;
     }
-    
+
     /* Efeito de arrastar */
     .carousel-container:active .carousel {
         cursor: grabbing;
         transition: none;
     }
-    
+
     .carousel-container:active .carousel {
         cursor: grabbing;
         transition: none;
     }
-    
+
     .carousel-container:active .carousel {
         cursor: grabbing;
         transition: none;
     }
-    
+
     .carousel-container:active .carousel {
         cursor: grabbing;
         transition: none;
     }
-    
+
     .Card img {
         border-radius: 25px 25px 0px 0px;
     }
-    
+
     .Card h3 {
         margin: 15px 30px 0px 30px;
     }
-    
+
     .Card p {
         padding: 10px 15px 50px 15px;
         text-align: left;
     }
-    
+
     .Button {
         text-decoration: none;
         background-color: var(--vermelhoLayout2);
@@ -532,7 +554,7 @@ footer {
         font-size: 1.2em;
         font-weight: 700;
     }
-    
+
     .Button2 {
         text-decoration: none;
         background-color: var(--BrancoLayout);
@@ -542,9 +564,22 @@ footer {
         font-size: 1.2em;
         font-weight: 700;
     }
+
     /*Cabeçalho*/
+    .FlexMenu {
+        height: 125px;
+    }
     header {
         max-width: 100%;
+        margin: 0 auto;
+
+    }
+
+    nav ul {
+        height: 26vh;
+        top: 130px;
+        right: -50%;
+        width: 50%;
     }
 }
 
@@ -557,7 +592,7 @@ footer {
     }
 
     /* Cartão */
-    
+
 
     .Card2 {
         flex: 0 0 auto;
@@ -635,9 +670,17 @@ footer {
     }
 
     nav ul li {
+        color: #fff;
         border: 0;
+        transition: .5s;
         float: right;
     }
+
+    nav ul li:hover {
+        transition: .5s;
+        color: black;
+    }
+
 
     nav ul li a {
         color: var(--bordalayout);
@@ -649,19 +692,28 @@ footer {
 
     #banner h1 {
         font-size: 3em;
-        text-shadow: 5px 5px black;;
+        text-shadow: 5px 5px black;
+        ;
     }
 
     #banner h2 {
         font-size: 1.5em;
-        text-shadow: 3px 3px black;;
+        text-shadow: 3px 3px black;
+        ;
     }
 }
-
 
 #topo img {
     width: 54px;
     height: 54px;
+}
+
+#social img{
+    max-width:40px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
 }
 
 /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
@@ -671,10 +723,10 @@ footer {
 
 #banner {
     height: 400pt;
-    
+
 }
 
-#banner h1{
+#banner h1 {
     font-size: 3em;
     text-shadow: 5px 5px black;
 }
