@@ -248,6 +248,7 @@ header {
     margin: 0 auto;
     display: block;
     width: 300px;
+    margin-bottom: 30px;
 }
 
 
@@ -337,12 +338,17 @@ footer {
     background-color: var(--vermelhoLayout);
     color: var(--BrancoLayout);
     text-align: center;
-    padding-top: 10px;
-    height: 115px;
+    margin: auto;
+    height: auto;
 }
 
 #social {
-    margin-top: -50ppx;
+    margin-top: -23px;
+}
+
+#autor {
+    font-style: italic;
+    font-weight: 250;
 }
 
 
@@ -592,6 +598,21 @@ footer {
         padding: 10px 15px 50px 15px;
     }
 
+    footer {
+        background-color: var(--vermelhoLayout);
+        color: var(--BrancoLayout);
+        text-align: center;
+        margin: auto;
+        height: 100px;
+    }
+
+    #social {
+        margin-top: 25px;
+    }
+
+    #copyright{
+        margin-top: 20px;
+    }
     /* Cartão */
 
 
