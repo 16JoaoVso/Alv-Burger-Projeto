@@ -78,6 +78,7 @@ section {
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
 /**************** Cabeçalho ****************/
+
 header {
     height: 100%;
     background-color: #b22222;
@@ -336,12 +337,12 @@ footer {
     background-color: var(--vermelhoLayout);
     color: var(--BrancoLayout);
     text-align: center;
-    padding-top: 39px;
-    height: 100px;
+    padding-top: 10px;
+    height: 115px;
 }
 
 #social {
-    margin-top: 10px;
+    margin-top: -50ppx;
 }
 
 
@@ -388,7 +389,7 @@ footer {
 
 
     #social {
-        margin: ;
+        margin: 0;
     }
 }
 
