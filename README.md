@@ -23,3 +23,5 @@ João Victor Santos
 
 [Validator W3C](https://validator.w3.org/nu/#file)
 
+# QR-CODE
+![qrcode_16joaovso github io](https://github.com/16JoaoVso/Alv-Burger-Projeto/assets/129982952/a35f9fe6-6890-460c-9883-a1d0c76c8685)
