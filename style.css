@@ -172,6 +172,40 @@ header {
     text-align: left;
 }
 
+.CardC {
+    display: none;
+}
+
+.CardC2 {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 30px;
+    background-color: var(--backgroundCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--bordaLayout);
+}
+
+.CardC2 img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.CardC2 h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.CardC2 p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
+
 .Button {
     text-decoration: none;
     background-color: var(--vermelhoLayout2);
@@ -274,6 +308,10 @@ header {
     display: block;
 }
 
+#QRBox {
+    display: none;
+}
+
 #textoBox {
     color: var(--BrancoLayout);
     padding: 0px 10px;
@@ -285,6 +323,7 @@ header {
 
 .TopicoBox {
     margin-top: 20px;
+    color: var(--BrancoLayout);
 }
 
 .TopicoBox img {
@@ -613,6 +652,35 @@ footer {
     #copyright{
         margin-top: 20px;
     }
+
+    /* QRCode */
+
+    #QRBox {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 200px;
+        height: 300px;
+        width: auto;
+    }
+
+    #QRBox p{
+        margin-top: 20px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .teste9{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        
+    }
+
+    .Top12{
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Cartão */
 
 
@@ -642,6 +710,40 @@ footer {
     }
 
     .Card2 p {
+        padding: 10px 15px 50px 15px;
+        text-align: left;
+    }
+
+    .CardC2 {
+        display: none;
+    }
+
+    .CardC {
+        flex: 0 0 auto;
+        width: 260px;
+        height: 500px;
+        margin-top: 50px;
+        margin-right: 30px;
+        background-color: var(--backgroundCard);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border: 1px solid var(--bordaLayout);
+    }
+
+    .CardC img {
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .CardC h3 {
+        margin: 15px 30px 0px 30px;
+    }
+
+    .CardC p {
         padding: 10px 15px 50px 15px;
         text-align: left;
     }
