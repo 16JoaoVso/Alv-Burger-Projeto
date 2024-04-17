@@ -56,6 +56,25 @@ section {
     padding: 50px 15px;
 }
 
+.Container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Container2 a{
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: black;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .Flex,
 .FlexMenu {
     display: flex;
@@ -277,6 +296,20 @@ header {
     background-color: var(--backgroundCard);
 }
 
+#Box2 {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bordaLayout);
+}
+
+#Box3 {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--backgroundCard);
+}
+
 #destaqueSBox img {
     border-radius: 75%;
     margin: 0 auto;
@@ -308,11 +341,32 @@ header {
     display: block;
 }
 
+#destaqueBox2 img {
+    margin: 0 auto;
+    display: block;
+}
+
 #QRBox {
     display: none;
 }
 
 #textoBox {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#textoBox3 {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#textoBox4 {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#textoBox5 {
     color: var(--BrancoLayout);
     padding: 0px 10px;
 }
@@ -324,6 +378,13 @@ header {
 .TopicoBox {
     margin-top: 20px;
     color: var(--BrancoLayout);
+}
+.TopicoBox2 {
+    margin-top: 20px;
+    color: black;
+}
+.TopicoBox2 h2{
+    text-align: center;
 }
 
 .TopicoBox img {
@@ -352,6 +413,31 @@ nav ul {
     z-index: 1;
 }
 
+form{
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;/* Compatibiliza o tamanho das caixas com o box model */
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
 /* ativar checkbox */
 #check:checked~ul {
     right: 0px;
@@ -493,7 +579,38 @@ footer {
         height: 5px;
         color: rgba(67, 67, 67, 0.9);
     }
+ .CardC2{
+    display: none;
+ }
+ .CardC {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 30px;
+    background-color: var(--backgroundCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--bordaLayout);
+}
 
+.CardC img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.CardC h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.CardC p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
