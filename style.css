@@ -1,0 +1,986 @@
+/** 
+Folha de estilo do site Alv Burger
+@author João Victor Santos de Oliveira
+@link https://16joaovso.github.io/Alv-Burger-Projeto/
+*/
+
+/* importar fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variaveis globais */
+
+:root {
+    --vermelhoLayout: #b22222;
+    --BrancoLayout: #FFFFFF;
+    --backgroundCard: #ff6961;
+    --bordaLayout: #ffa1b1;
+    --vermelhoLayout2: #b81414;
+}
+
+/* CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Montserrat", "Poppins";
+    font-size: 1em;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 200px;
+    padding: 50px 15px 50px 15px;
+}
+
+.Container {
+
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.Container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Container2 a{
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: black;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.Flex,
+.FlexMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    color: var(--BrancoLayout);
+
+}
+
+.Flex {
+    flex-direction: column;
+}
+
+#topo {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
+/**************** Cabeçalho ****************/
+
+header {
+    height: 100%;
+    background-color: #b22222;
+}
+
+/* Cartão */
+
+.carousel-container {
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    scroll-behavior: smooth;
+    /* Adiciona suavização à rolagem */
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    /* Adiciona espaço à esquerda */
+    height: 450px;
+    /* Defina a altura do carrossel */
+    overflow-x: auto;
+    z-index: -1;
+    scroll-snap-type: x mandatory;
+    /* Define o tipo de rolagem */
+}
+
+.Card {
+    flex: 0 0 auto;
+    width: calc(100% - 50px);
+    /* Ajusta o tamanho do cartão */
+    height: 450px;
+    margin-right: 20px;
+    background-color: var(--backgroundCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--bordaLayout);
+    z-index: 0;
+}
+
+.Card2 {
+    display: none;
+}
+
+/* Para permitir arrastar para os lados */
+.carousel-container:hover .carousel {
+    cursor: grab;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+}
+
+/* Efeito de arrastar */
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.carousel-container:active .carousel {
+    cursor: grabbing;
+    transition: none;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
+
+.CardC {
+    display: none;
+}
+
+.CardC2 {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 30px;
+    background-color: var(--backgroundCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--bordaLayout);
+}
+
+.CardC2 img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.CardC2 h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.CardC2 p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelhoLayout2);
+    color: var(--BrancoLayout);
+    padding: 2px 80px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.Button2 {
+    text-decoration: none;
+    background-color: var(--BrancoLayout);
+    color: var(--vermelhoLayout);
+    padding: 2px 80px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#logo img {
+    margin: 2px 0px 0px 10px;
+}
+
+#topo {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+#check {
+    display: none;
+}
+
+/* BANNER HOME*/
+
+#banner {
+    height: 10vh;
+    background: url(./img/backgroundteste.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+}
+
+#banner h1 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 52px;
+    text-shadow: 5px 5px black;
+    ;
+}
+
+#banner h2 {
+    font-size: 1.15em;
+    font-weight: 500;
+    margin: 5px 0px 45px 0px;
+    text-shadow: 3px 3px black;
+    ;
+}
+
+#Sobre {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--backgroundCard);
+}
+
+#Box2 {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bordaLayout);
+}
+
+#Box3 {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--backgroundCard);
+}
+
+#destaqueSBox img {
+    border-radius: 75%;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+#sobreBox {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#sobreBox h2 {
+    margin-bottom: 10px;
+}
+
+#Box {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--vermelhoLayout);
+}
+
+#destaqueBox img {
+    border-radius: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+#destaqueBox2 img {
+    margin: 0 auto;
+    display: block;
+}
+
+#QRBox {
+    display: none;
+}
+
+#textoBox {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#textoBox3 {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#textoBox4 {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#textoBox5 {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+}
+
+#textoBox h2 {
+    margin-bottom: 10px;
+}
+
+.TopicoBox {
+    margin-top: 20px;
+    color: var(--BrancoLayout);
+}
+.TopicoBox2 {
+    margin-top: 20px;
+    color: black;
+}
+.TopicoBox2 h2{
+    text-align: center;
+}
+
+.TopicoBox img {
+    margin-right: 10px;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    font-size: 3em;
+    top: 20px;
+    right: 25px;
+    z-index: 1;
+
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(179, 25, 25, 0.85);
+    height: 30vh;
+    position: fixed;
+    top: 100px;
+    right: -60%;
+    width: 60%;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+form{
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;/* Compatibiliza o tamanho das caixas com o box model */
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+/* ativar checkbox */
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--bordaLayout);
+    text-align: right;
+    padding: 15px;
+    z-index: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancolayout);
+    z-index: 1;
+}
+
+
+/**************** Rodapé ****************/
+/*FOOTER*/
+footer {
+    background-color: var(--vermelhoLayout);
+    color: var(--BrancoLayout);
+    text-align: center;
+    margin: auto;
+    height: auto;
+}
+
+#social {
+    margin-top: -23px;
+}
+
+#autor {
+    font-style: italic;
+    font-weight: 250;
+}
+
+
+/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px) {
+    /* Cabeçalho */
+
+    .Container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        height: 53vh;
+    }
+
+    /* Banner */
+    #banner {
+        height: 20vh;
+    }
+
+    #banner h1 {
+        font-size: 1.7em;
+        text-shadow: 5px 5px black;
+        ;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        max-width: 100%;
+        margin: 0 auto;
+
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    #social {
+        margin: 0;
+    }
+}
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 768px) {
+
+    /*Layout*/
+    .Container {
+        max-width: 720px;
+    }
+
+    /*Cabeçalho*/
+    header {
+        max-width: 100%;
+        height: 130px;
+        background-color: lightsalmon;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+        margin: 2px 0px 0px 2px;
+    }
+
+    nav ul {
+        height: 19.5vh;
+        top: 130px;
+        right: -50%;
+        width: 50%;
+    }
+
+    /* banner */
+    #banner h1 {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 25px;
+        text-shadow: 5px 5px black;
+
+    }
+
+    #banner h2 {
+        display: block;
+        font-size: 1em;
+        text-shadow: 3px 3px black;
+        ;
+    }
+
+    #banner a {
+        margin-top: 50px;
+    }
+
+    label {
+        font-size: 4em;
+        top: 25px;
+        height: 5px;
+        color: rgba(67, 67, 67, 0.9);
+    }
+ .CardC2{
+    display: none;
+ }
+ .CardC {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 30px;
+    background-color: var(--backgroundCard);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--bordaLayout);
+}
+
+.CardC img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.CardC h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.CardC p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 992px) {
+    .Container {
+        max-width: 960px;
+        padding: 5px;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        margin: 0 auto;
+        display: block;
+        scroll-behavior: smooth;
+        /* Adiciona suavização à rolagem */
+    }
+
+    .carousel {
+        display: flex;
+        margin-top: 50px;
+        width: 100%;
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda */
+        height: 560px;
+        /* Defina a altura do carrossel */
+        overflow-x: auto;
+        z-index: -1;
+        scroll-snap-type: x mandatory;
+        /* Define o tipo de rolagem */
+    }
+
+    .Card {
+        flex: 0 0 auto;
+        width: calc(100% - 400px);
+        /* Ajusta o tamanho do cartão */
+        height: 450px;
+        margin-right: 50px;
+        background-color: var(--backgroundCard);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border: 1px solid var(--bordaLayout);
+        z-index: -1;
+    }
+
+    .Card2 {
+        display: none;
+    }
+
+    /* Para permitir arrastar para os lados */
+    .carousel-container:hover .carousel {
+        cursor: grab;
+    }
+
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+    }
+
+    /* Efeito de arrastar */
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+
+    .carousel-container:active .carousel {
+        cursor: grabbing;
+        transition: none;
+    }
+
+    .Card img {
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .Card h3 {
+        margin: 15px 30px 0px 30px;
+    }
+
+    .Card p {
+        padding: 10px 15px 50px 15px;
+        text-align: left;
+    }
+
+    .Button {
+        text-decoration: none;
+        background-color: var(--vermelhoLayout2);
+        color: var(--BrancoLayout);
+        padding: 2px 80px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .Button2 {
+        text-decoration: none;
+        background-color: var(--BrancoLayout);
+        color: var(--vermelhoLayout);
+        padding: 2px 80px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    /*Cabeçalho*/
+    .FlexMenu {
+        height: 125px;
+    }
+    header {
+        max-width: 100%;
+        margin: 0 auto;
+
+    }
+
+    nav ul {
+        height: 26vh;
+        top: 130px;
+        right: -50%;
+        width: 50%;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        padding: 10px 15px 50px 15px;
+    }
+
+    footer {
+        background-color: var(--vermelhoLayout);
+        color: var(--BrancoLayout);
+        text-align: center;
+        margin: auto;
+        height: 100px;
+    }
+
+    #social {
+        margin-top: 25px;
+    }
+
+    #copyright{
+        margin-top: 20px;
+    }
+
+    /* QRCode */
+
+    #QRBox {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 200px;
+        height: 300px;
+        width: auto;
+    }
+
+    #QRBox p{
+        margin-top: 20px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .teste9{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        
+    }
+
+    .Top12{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Cartão */
+
+
+    .Card2 {
+        flex: 0 0 auto;
+        width: 260px;
+        height: 500px;
+        margin-top: 50px;
+        margin-right: 30px;
+        background-color: var(--backgroundCard);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border: 1px solid var(--bordaLayout);
+    }
+
+    .Card2 img {
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .Card2 h3 {
+        margin: 15px 30px 0px 30px;
+    }
+
+    .Card2 p {
+        padding: 10px 15px 50px 15px;
+        text-align: left;
+    }
+
+    .CardC2 {
+        display: none;
+    }
+
+    .CardC {
+        flex: 0 0 auto;
+        width: 260px;
+        height: 500px;
+        margin-top: 50px;
+        margin-right: 30px;
+        background-color: var(--backgroundCard);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border: 1px solid var(--bordaLayout);
+    }
+
+    .CardC img {
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .CardC h3 {
+        margin: 15px 30px 0px 30px;
+    }
+
+    .CardC p {
+        padding: 10px 15px 50px 15px;
+        text-align: left;
+    }
+
+    .Button {
+        text-decoration: none;
+        background-color: var(--vermelhoLayout2);
+        color: var(--BrancoLayout);
+        padding: 2px 80px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .Button2 {
+        text-decoration: none;
+        background-color: var(--BrancoLayout);
+        color: var(--vermelhoLayout);
+        padding: 2px 80px;
+        border-radius: 25px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+
+    /*Cabeçalho*/
+    header {
+        max-width: 100%;
+        height: 160px;
+        background-color: var(--vermelhoLayout);
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--backgroundcard);
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        color: #fff;
+        border: 0;
+        transition: .5s;
+        float: right;
+    }
+
+    nav ul li:hover {
+        transition: .5s;
+        color: black;
+    }
+
+
+    nav ul li a {
+        color: var(--bordalayout);
+    }
+
+    nav ul li a:hover {
+        color: var(--lightgraw);
+    }
+
+    #banner h1 {
+        font-size: 3em;
+        text-shadow: 5px 5px black;
+        ;
+    }
+
+    #banner h2 {
+        font-size: 1.5em;
+        text-shadow: 3px 3px black;
+        ;
+    }
+}
+
+#topo img {
+    width: 54px;
+    height: 54px;
+}
+
+#social img{
+    max-width:40px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1400px) {}
+
+
+#banner {
+    height: 400pt;
+
+}
+
+#banner h1 {
+    font-size: 3em;
+    text-shadow: 5px 5px black;
+}
+
+
+/*Cabeçalho*/
+header {
+    height: 100%;
+    background-color: var(--vermelhoLayout);
+
+}
+
+#logo img {
+    width: 200px;
+    height: 81px;
+}
