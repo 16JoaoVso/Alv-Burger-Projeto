@@ -359,6 +359,14 @@ header {
     color: var(--BrancoLayout);
     padding: 0px 10px;
     text-align: center;
+    flex-direction: row;
+}
+
+#textoBox6 {
+    color: var(--BrancoLayout);
+    padding: 0px 10px;
+    text-align: center;
+    flex-direction: row;
 }
 
 #textoBox4 {
